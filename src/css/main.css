@@ -40,6 +40,7 @@ body {
 	margin: 0 auto;
 	max-width: 1200px;
 	width: 100%;
+	
 	/* border: 1px solid black; */
 }
 
@@ -53,110 +54,6 @@ body {
 	height: 100%;
 
 	background-color: rgba(117, 105, 182, 0.846);
-  }
-
-
-.links-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-}
-
-.links-box {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-
-.l-box {
-	padding: 10px 0 10px 0;
-}
-
-.one {
-	&::after {
-		left: -1px;
-	}
-}
-
-.link {
-	position: relative;
-	font-size: 1.5rem;
-	/* font-weight: 300; */
-	text-decoration: none;
-	color: var(--txt_01);
-	margin: 0 10px;
-	transition: color 0.5s;
-
-	&::after {
-		content: '';
-		position: absolute;
-		bottom: -4px;
-		left: -1px;
-		height: 1px;
-		width: 100%;
-		background-color: var(--after_txt);
-		transform: scaleX(0);
-		transform-origin: right;
-		transition: transform 0.35s;
-	}
-
-	&:hover::after {
-		transform: scaleX(1);
-		transform-origin: left;
-	}
-}
-
-.contact {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	padding-top: 50px;
-	height: 100vh;
-	width: 100vw;
-}
-
-.contact-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	height: 50%;
-	width: 100%;
-	/* padding-top: 1500px; */
-}
-
-.contact-text {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	flex-direction: column;
-}
-
-.map {
-	height: 100%;
-	width: 50%;
-}
-
-
-.contact-text div i {
-	padding-right: 12px;
-	font-size: 1.2rem;
-}
-
-.contact-text div h2 {
-	font-size: 2rem;
-	padding-bottom: 5px;
-}
-
-.contact-text div p {
-	font-size: 1.4rem;
-}
-
-.fa-square-facebook {
-	padding-bottom: 20px;
 }
 
 nav {
@@ -166,6 +63,7 @@ nav {
 	z-index: 50;
 	height: 100px;
 	transition: background-color 0.4s;
+	/* border-bottom: 1px solid black; */
 }
 
 nav .desktop-nav {
@@ -274,6 +172,160 @@ nav .mobile-nav .mobile-link-box .mobile-link {
 	font-size: 2rem;
 }
 
+.links-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.links-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.l-box {
+	padding: 10px 0 10px 0;
+}
+
+.one {
+	&::after {
+		left: -1px;
+	}
+}
+
+.link {
+	position: relative;
+	font-size: 1.5rem;
+	/* font-weight: 300; */
+	text-decoration: none;
+	color: var(--txt_01);
+	margin: 0 10px;
+	transition: color 0.5s;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -4px;
+		left: -1px;
+		height: 1px;
+		width: 100%;
+		background-color: var(--after_txt);
+		transform: scaleX(0);
+		transform-origin: right;
+		transition: transform 0.35s;
+	}
+
+	&:hover::after {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+}
+
+.contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding-top: 50px;
+	height: 100vh;
+	width: 100vw;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	height: 50%;
+	width: 100%;
+	/* padding-top: 1500px; */
+}
+
+.contact-text {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.map {
+	height: 100%;
+	width: 50%;
+}
+
+.contact-text div i {
+	padding-right: 12px;
+	font-size: 1.2rem;
+}
+
+.contact-text div h2 {
+	font-size: 2rem;
+	padding-bottom: 5px;
+}
+
+.contact-text div p {
+	font-size: 1.4rem;
+}
+
+.fa-square-facebook {
+	padding-bottom: 20px;
+}
+
+
+.when {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 200px;
+	height: 100vh;
+	width: 100%;
+}
+
+.img-container {
+	height: 65%;
+	/* width: 40%; */
+}
+
+.img-container img {
+	width: 100%;
+	height: 100%;
+	border: 2px solid ;
+}
+
+.when-text {
+	display: flex;
+	/* justify-content: center; */
+	/* height: 50%; */
+	align-items: flex-start;
+	flex-direction: column;
+	padding-left: 50px;
+}
+
+.when-text h2 {
+	font-size: 1.8rem;
+	padding-left: 10px;
+}
+
+.when-text ul li {
+	padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */
 
 @media (max-width: 992px) {
 	nav .hamburger-container {
@@ -295,10 +347,9 @@ nav .mobile-nav .mobile-link-box .mobile-link {
 		height: 100%;
 		width: 90%;
 	}
-	
+
 	.map {
 		height: 100%;
 		width: 100%;
 	}
-	
 }
