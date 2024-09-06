@@ -40,7 +40,7 @@ body {
 	margin: 0 auto;
 	max-width: 1200px;
 	width: 100%;
-	
+
 	/* border: 1px solid black; */
 }
 
@@ -172,24 +172,6 @@ nav .mobile-nav .mobile-link-box .mobile-link {
 	font-size: 2rem;
 }
 
-.links-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-}
-
-.links-box {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.l-box {
-	padding: 10px 0 10px 0;
-}
-
 .one {
 	&::after {
 		left: -1px;
@@ -223,6 +205,44 @@ nav .mobile-nav .mobile-link-box .mobile-link {
 		transform-origin: left;
 	}
 }
+
+.index-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	padding-top: 1em;
+}
+
+.index-link {
+	font-size: 1.8rem;
+}
+
+.index-img {
+	display: flex;
+	justify-content: center;
+	margin-bottom: -1em
+}
+
+.index-img img{
+	object-fit: contain;
+	width: 50%;
+}
+
+.links-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.l-box {
+	padding: 10px 0 10px 0;
+}
+
+
+/* KONTAKT */
 
 .contact {
 	display: flex;
@@ -273,25 +293,27 @@ nav .mobile-nav .mobile-link-box .mobile-link {
 	padding-bottom: 20px;
 }
 
+/* KIEDY DO LOGOPEDY */
 
 .when {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	padding-top: 200px;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 }
 
+
 .img-container {
-	height: 65%;
-	/* width: 40%; */
+	/* height: 65%; */
+	width: 40%;
 }
 
 .img-container img {
 	width: 100%;
 	height: 100%;
-	border: 2px solid ;
+	border: 2px solid;
 }
 
 .when-text {
@@ -306,21 +328,86 @@ nav .mobile-nav .mobile-link-box .mobile-link {
 .when-text h2 {
 	font-size: 1.8rem;
 	padding-left: 10px;
+	margin: 0;
 }
 
 .when-text ul li {
 	padding: 5px 0;
+	font-size: 1.2rem;
+}
+
+/* O NAS */
+
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 150px;
+	/* height: 100vh; */
+	width: 100%;
+}
+
+.about-text {
+	text-align: center;
+	font-size: 1.6rem;
+	padding-bottom: 2em;
+}
+
+.about-text p {
+	text-align: left;
+	font-size: 1.3rem;
+	font-family: 'Poppins';
+}
+
+.about-carousel {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 3em;
+}
+
+
+.splide {
+	width: 55%;
+	height: 100%;
+}
+
+.splide img {
+	width: 100%;
+	height:100%;
+	object-fit: contain;
+}
+
+.splide__track {
+	height: 100%;
+}
+
+
+/* OFERTA */
+
+.offer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 150px;
+	/* height: 100vh; */
+	width: 100%;
+}
+
+.offer-text {
+	font-size: 1.6rem;
 }
 
 
 
 
+/* NAVIGATION BOX SHADOW */
 
-
-
-
-
-
+nav {
+	-webkit-box-shadow: 0px 2px 4px -3px rgba(116, 105, 182, 1);
+	-moz-box-shadow: 0px 2px 4px -3px rgba(116, 105, 182, 1);
+	box-shadow: 0px 2px 4px -3px rgba(116, 105, 182, 1);
+}
 
 
 
@@ -339,6 +426,13 @@ nav .mobile-nav .mobile-link-box .mobile-link {
 		display: none;
 	}
 
+	nav .mobile-nav .mobile-link-box .mobile-link {
+		text-decoration: none;
+		color: var(--bg);
+		/* text-transform: uppercase; */
+		font-size: 1.7rem;
+	}
+
 	.contact-container {
 		display: flex;
 		flex-direction: column;
@@ -348,8 +442,86 @@ nav .mobile-nav .mobile-link-box .mobile-link {
 		width: 90%;
 	}
 
+	.contact-text {
+		padding-top: 1.5em;
+		padding-bottom: 1em;
+	}
+
+	.contact-text div i {
+		padding-right: 12px;
+		font-size: 1.3rem;
+	}
+
+	.contact-text div h2 {
+		font-size: 1.8rem;
+		padding: 0;
+		margin: 0;
+	}
+
+	.contact-text div p {
+		font-size: 1.3rem;
+	}
+
 	.map {
 		height: 100%;
 		width: 100%;
+	}
+
+	/* .map iframe {
+		height: 320px;
+	} */
+
+	.when {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 150px;
+	}
+
+	.when-text {
+		padding: 1.4em 0.8em;
+		
+	}
+
+	.when-text h2 {
+		font-size: 1.4rem;
+		padding-left: 0px;
+	}
+
+	.img-container {
+		/* height: 60%; */
+		width: 90%;
+		/* width: 40%; */
+		padding: 0.4em;
+	}
+
+	.img-container img {
+		width: 100%;
+		height: 100%;
+		border: 2px solid;
+	}
+
+	.about {
+		padding-top: 120px;
+	}
+
+	.about-text {
+		text-align: center;
+		font-size: 1.4rem;
+	}
+
+	.about-text p {
+		font-size: 1.2rem;
+		padding: 0 1em;
+	}
+
+	.splide {
+		width: 90%;
+		height: 100%;
+	}
+
+	.index-img img{
+		object-fit: contain;
+		width: 90%;
 	}
 }

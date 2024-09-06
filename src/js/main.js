@@ -15,6 +15,7 @@ let observer;
 let mobileLinks;
 let index = 0;
 
+
 const options = {
 	threshold: [0.5, 0.9],
 };
